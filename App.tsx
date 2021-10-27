@@ -6,8 +6,7 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Info from './Information';
 
-
-function Feed() {
+const Feed = () => {
   return (
       <View style={{flex: 1,justifyContent: 'center', alignItems: 'center' }}>
       <Text style={{color:'#2c73f7', fontSize: 28, fontWeight:'500'}}>Feed Screen</Text>
@@ -16,7 +15,7 @@ function Feed() {
   );
 }
 
-function Article() {
+const Article =() => {
   return (
       <View style={{flex: 1,justifyContent: 'center', alignItems: 'center' }}>
       <Text style={{color:'#2c73f7', fontSize: 28, fontWeight:'500'}}>Article Screen</Text>
@@ -64,13 +63,13 @@ const App = () => {
     <View style={{flex: 1, marginTop: 30}}>
     <NavigationContainer>
        {/* ======DEMO DRAWER==== */}
-       <MyDrawer />
+       {/* <MyDrawer /> */}
 
        {/* ====DEMO TOP TAB NAVIGATOR */}
        {/* <MyMaterialTopTabNavigator /> */}
 
        {/* ====DEMO BOTTOM TAB NAVIGATOR */}
-       {/* <MyBottomTabNavigator /> */}
+       <MyBottomTabNavigator />
 
      </NavigationContainer>
 

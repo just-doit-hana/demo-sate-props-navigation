@@ -89,6 +89,7 @@ const Info = () => {
         >
           Demo Props
         </Text>
+        {/* ===Component Information ====== */}
         <Information
           isHidden={true}
           header={"Thông Tin"}
